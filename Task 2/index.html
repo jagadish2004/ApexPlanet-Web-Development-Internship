@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 - Contact Form & To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h2>Task 2 Project</h2>
+            <ul>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#todo">To-Do List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Contact Form & To-Do List</h1>
+        <p>Built using HTML, CSS, and JavaScript</p>
+    </section>
+
+    <div class="container">
+
+        <!-- Contact Form -->
+        <section id="contact" class="card">
+            <h2>Contact Form</h2>
+
+            <form id="contactForm">
+
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+                    <small class="error" id="nameError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <small class="error" id="emailError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label>Phone</label>
+                    <input type="text" id="phone" placeholder="Enter phone number">
+                    <small class="error" id="phoneError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label>Subject</label>
+                    <input type="text" id="subject" placeholder="Enter subject">
+                    <small class="error" id="subjectError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea id="message" rows="5"
+                    placeholder="Enter your message"></textarea>
+                    <small class="error" id="messageError"></small>
+                </div>
+
+                <button type="submit">Submit</button>
+
+                <p id="successMessage"></p>
+
+            </form>
+        </section>
+
+        <!-- To Do List -->
+        <section id="todo" class="card">
+            <h2>Dynamic To-Do List</h2>
+
+            <div class="todo-box">
+                <input type="text"
+                       id="taskInput"
+                       placeholder="Enter new task">
+
+                <button id="addTaskBtn">
+                    Add Task
+                </button>
+            </div>
+
+            <ul id="taskList"></ul>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>
+            © 2026 Jagadish | ApexPlanet Task 2
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
